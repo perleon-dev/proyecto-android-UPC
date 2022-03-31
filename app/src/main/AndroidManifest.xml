@@ -10,14 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Fast_Service">
         <activity
-<<<<<<< HEAD
+            android:name=".ConsumptionHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterProductActivity"
+            android:exported="false" />
+        <activity
             android:name=".InfoProductActivity"
             android:exported="false" />
         <activity
             android:name=".RegisterUserActivity"
-=======
+            android:exported="false" />
+        <activity
             android:name=".VisualizarPedidoActivity"
->>>>>>> b38c0e63b95a5f6c263500d89769366d9a90b6d3
             android:exported="false" />
         <activity
             android:name=".LoginActivity"
@@ -32,11 +37,7 @@
             android:name=".MainActivity"
             android:exported="false"
             android:label="@string/app_name"
-<<<<<<< HEAD
             android:theme="@style/Theme.Fast_Service.NoActionBar" />
-=======
-            android:theme="@style/Theme.Fast_Service.NoActionBar"></activity>
->>>>>>> b38c0e63b95a5f6c263500d89769366d9a90b6d3
     </application>
 
 </manifest>
