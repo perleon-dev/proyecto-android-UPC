@@ -7,9 +7,23 @@
         <entry key="..\:/Aplicaciones Personales/proyecto-android-UPC/app/src/main/res/layout/activity_consumption_history.xml" value="0.18802083333333333" />
         <entry key="..\:/Aplicaciones Personales/proyecto-android-UPC/app/src/main/res/layout/activity_info_product.xml" value="0.2667572463768116" />
         <entry key="..\:/Aplicaciones Personales/proyecto-android-UPC/app/src/main/res/layout/activity_login.xml" value="0.28442028985507245" />
+<<<<<<< HEAD
         <entry key="..\:/Aplicaciones Personales/proyecto-android-UPC/app/src/main/res/layout/activity_register_product.xml" value="0.18802083333333333" />
         <entry key="..\:/Aplicaciones Personales/proyecto-android-UPC/app/src/main/res/layout/activity_register_productctivity.xml" value="0.18802083333333333" />
+=======
+
+        <entry key="..\:/UPC/DMovil/proyecto-android-UPC/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/UPC/DMovil/proyecto-android-UPC/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/UPC/DMovil/proyecto-android-UPC/app/src/main/res/layout/venta_registro_usuario.xml" value="0.33" />
+        <entry key="..\:/UPC/DMovil/proyecto-android-UPC/app/src/main/res/layout/visualizar_atenciones.xml" value="0.36666666666666664" />
+        <entry key="..\:/UPC/DMovil/proyecto-android-UPC/app/src/main/res/layout/visualizar_registro.xml" value="0.36666666666666664" />
+        <entry key="..\:/UPC/DMovil/proyecto-android-UPC/app/src/main/res/layout/vizualizar_estado_pedido.xml" value="0.36666666666666664" />
+        <entry key="..\:/UPC/DMovil/proyecto-android-UPC/app/src/main/res/menu/activity_main_drawer.xml" value="0.1" />
+        <entry key="..\:/UPC/DMovil/proyecto-android-UPC/app/src/main/res/menu/main.xml" value="0.20416666666666666" />
+
+>>>>>>> f4f0c1a8b6ad5e19c635a4ba04cffb733e7cb3de
         <entry key="..\:/Aplicaciones Personales/proyecto-android-UPC/app/src/main/res/layout/activity_register_user.xml" value="0.2682291666666667" />
+
       </map>
     </option>
   </component>

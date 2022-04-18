@@ -2,13 +2,28 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.fast_service">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
         android:theme="@style/Theme.Fast_Service">
+        <activity
+            android:name=".CancelarPedidoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VisualizarEstadoPedidoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VisualizarPedidoGeneralActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VisualizarAtencionesActivity"
+            android:exported="false" />
         <activity
             android:name=".ConsumptionHistoryActivity"
             android:exported="false" />
