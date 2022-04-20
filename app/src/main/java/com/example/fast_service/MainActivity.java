@@ -1,6 +1,8 @@
 package com.example.fast_service;
 
 import android.os.Bundle;
+import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.Menu;
 
@@ -61,5 +63,22 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle item selection
+        switch (item.getItemId()) {
+            case R.id.nav_home:
+                Log.i("====>","Click en nav_home!!");
+                return true;
+            case R.id.nav_gallery:
+                Log.i("====>","Click en nav_gallery!!");
+                return true;
+            case R.id.nav_slideshow:
+                Log.i("====>","Click en nav_slideshow!!");
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 }

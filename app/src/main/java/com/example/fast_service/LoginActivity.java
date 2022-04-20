@@ -32,16 +32,8 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
     }
 
-    public void iniciarSesion(View v) {
-        EditText user = findViewById(R.id.editTextTextUser);
-        EditText password = findViewById(R.id.editTextTextPassword);
-
-        String x = user.getText().toString();
-        String y = password.getText().toString();
-
-        Log.i("===>", x);
-
-        startActivity(new Intent(this, MainActivity.class));
+    public void register_activity(View v) {
+        startActivity(new Intent(this, RegisterUserActivity.class));
     }
 
     public void login_user(View v) {
@@ -53,7 +45,7 @@ public class LoginActivity extends AppCompatActivity {
         try {
             jsonobject.put("userName", user.getText().toString());
             jsonobject.put("password", password.getText().toString());
-            
+
         } catch (JSONException e) {
             Log.i("======>", e.getMessage());
         }
