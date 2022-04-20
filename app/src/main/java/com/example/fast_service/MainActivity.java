@@ -1,5 +1,6 @@
 package com.example.fast_service;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
@@ -70,6 +71,8 @@ public class MainActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.nav_home:
                 Log.i("====>","Click en nav_home!!");
+                Intent intent = new Intent(this, ConsumptionHistoryActivity.class);
+                startActivity(intent);
                 return true;
             case R.id.nav_gallery:
                 Log.i("====>","Click en nav_gallery!!");
@@ -78,6 +81,7 @@ public class MainActivity extends AppCompatActivity {
                 Log.i("====>","Click en nav_slideshow!!");
                 return true;
             default:
+                Log.i("====>","ninguno : " + item.getItemId());
                 return super.onOptionsItemSelected(item);
         }
     }

@@ -34,7 +34,7 @@ public class ConsumptionHistoryActivity extends AppCompatActivity {
 
     public void cargarProductos(){
         String criterio = "1";
-        String url = "http://condeleron.atwebpages.com/index.php/productos/"+criterio;
+        String url = "https://serviciomovil.azurewebsites.net/api/FastService/search-product-idcliente?id_cliente="+criterio;
         StringRequest stringRequest= new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
             @Override public void onResponse(String response) {
                 try { JSONArray jsonArray = new JSONArray(response);
