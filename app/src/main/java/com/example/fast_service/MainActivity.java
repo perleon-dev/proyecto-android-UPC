@@ -78,6 +78,10 @@ public class MainActivity extends AppCompatActivity {
                 Intent myintent3 = new Intent(MainActivity.this, VisualizarPedidoActivity.class);
                 startActivity(myintent3);
                 return false;
+            case R.id.nav_home:
+                Intent myintent4 = new Intent(MainActivity.this, ConsumptionHistoryActivity.class);
+                startActivity(myintent4);
+                return false;
 
 
 

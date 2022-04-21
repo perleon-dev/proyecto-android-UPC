@@ -31,24 +31,7 @@ public class VisualizarPedidoActivity extends AppCompatActivity {
 
         String url = "https://serviciomovil.azurewebsites.net/api/FastService/nueva-solicitud-pedido";
 
-        /*JsonObjectRequest jsonObjReq = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
-            @Override public void onResponse(JSONObject response) {
-                if (response != null ){
-                    Log.i("======>", "bien");
-                    Log.i("======>", response.toString());
 
-                }
-                else{
-                    Log.i("======>", "nulo");
-                }
-
-            } }, new Response.ErrorListener() {
-            @Override public void onErrorResponse(VolleyError error) {
-                Log.i("======>", "mal");
-                Log.i("======>", error.toString());
-            } } );
-        RequestQueue requestQueue = Volley.newRequestQueue(this);
-        requestQueue.add(jsonObjReq);*/
 
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest
                 (Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
