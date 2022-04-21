@@ -1,12 +1,15 @@
 package com.example.fast_service;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
+import android.view.MenuItem;
 
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
+import androidx.annotation.NonNull;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -56,6 +59,32 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.action_estado_pedido:
+                Intent myintent = new Intent(MainActivity.this, VisualizarEstadoPedidoActivity.class);
+                startActivity(myintent);
+                return false;
+            case R.id.action_registro_usuario:
+                Intent myintent1 = new Intent(MainActivity.this, RegistroUsuario.class);
+                startActivity(myintent1);
+                return false;
+            case R.id.action_visualizar_atenciones:
+                Intent myintent2 = new Intent(MainActivity.this, VisualizarAtencionesActivity.class);
+                startActivity(myintent2);
+                return false;
+            case R.id.action_visualizar_pedido:
+                Intent myintent3 = new Intent(MainActivity.this, VisualizarPedidoActivity.class);
+                startActivity(myintent3);
+                return false;
+
+
+
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
     @Override
     public boolean onSupportNavigateUp() {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
