@@ -10,7 +10,10 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
-
+    <string name="menu_regusuario">Registro Usuario</string>
+    <string name="menu_vipedido">Visualizar Pedido</string>
+    <string name="menu_viatenciones">Visualizar Atenciones</string>
+    <string name="menu_viEstadoPedido">Visualizar Estado del Pedido</string>
     <string-array name="reportes">
         <item>Atención del día</item>
         <item>Atención de la semana</item>

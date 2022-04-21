@@ -4,16 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".VisualizarPedidoActivity">
-
+    tools:context=".RegistroUsuario">
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="309dp"
+        android:layout_height="37dp"
         android:layout_marginStart="12dp"
-        android:layout_marginTop="16dp"
-        android:text="VISUALIZAR PEDIDO"
+        android:layout_marginTop="8dp"
+        android:text="REGISTRO DE USUARIO"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -31,127 +30,161 @@
 
     <EditText
         android:id="@+id/editTextNombre"
-        android:layout_width="379dp"
-        android:layout_height="46dp"
+        android:layout_width="365dp"
+        android:layout_height="40dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.437"
+        app:layout_constraintHorizontal_bias="0.346"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="59dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:text="DNI:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNombre" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="194dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.873"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNombre" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:text="CELULAR:"
+        android:layout_marginTop="20dp"
+        android:text="CORREO:"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNombre" />
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <EditText
         android:id="@+id/editTextCelular"
-        android:layout_width="376dp"
-        android:layout_height="47dp"
-        android:layout_marginTop="4dp"
+        android:layout_width="368dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintHorizontal_bias="0.255"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="CELULAR:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCelular" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName4"
+        android:layout_width="191dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.809"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCelular" />
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:text="PUNTO DE RECOJO:"
+        android:layout_marginTop="24dp"
+        android:text="DIRECCIÓN:"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextCelular" />
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
     <EditText
         android:id="@+id/editTextPuntoDeRecojo"
         android:layout_width="373dp"
-        android:layout_height="47dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.347"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="REFERENCIA:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPuntoDeRecojo" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName6"
+        android:layout_width="371dp"
+        android:layout_height="43dp"
         android:layout_marginTop="4dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintHorizontal_bias="0.307"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <TextView
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:text="PUNTO DE DESTINO"
+        android:layout_marginTop="16dp"
+        android:text="FECHA DE CUMPLEAÑOS"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPuntoDeRecojo" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6" />
 
     <EditText
         android:id="@+id/editTextPuntoDeDestino"
-        android:layout_width="381dp"
-        android:layout_height="36dp"
-        android:layout_marginTop="4dp"
+        android:layout_width="372dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintHorizontal_bias="0.341"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="4dp"
-        android:text="DETALLE DE LO QUE SE TRASLADARÁ:"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPuntoDeDestino" />
-
-    <EditText
-        android:id="@+id/editTextDetalle"
-        android:layout_width="376dp"
-        android:layout_height="81dp"
-        android:layout_marginTop="8dp"
-        android:ems="10"
-        android:gravity="start|top"
-        android:inputType="textMultiLine"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.428"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@android:color/holo_red_light"
-        android:text="RECHAZAR"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.179"
-        app:layout_constraintStart_toEndOf="@+id/button"
-        app:layout_constraintTop_toBottomOf="@+id/editTextDetalle"
-        app:layout_constraintVertical_bias="0.096" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="88dp"
-        android:text="ACEPTAR"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextDetalle"
-        app:layout_constraintVertical_bias="0.096" />
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="28dp"
+        android:text="REGISTRARSE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPuntoDeDestino" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
