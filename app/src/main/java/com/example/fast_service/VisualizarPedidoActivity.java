@@ -61,15 +61,15 @@ public class VisualizarPedidoActivity extends AppCompatActivity {
 
                         try {
                             EditText nombre = findViewById(R.id.editTextNombre);
-                            nombre.setText(response.getJSONObject("nombre").toString());
+                            nombre.setText(response.getString("nombre"));
                             EditText celular = findViewById(R.id.editTextCelular);
-                            celular.setText(response.getJSONObject("celular").toString());
+                            celular.setText(response.getString("celular"));
                             EditText recojo = findViewById(R.id.editTextPuntoDeRecojo);
-                            recojo.setText(response.getJSONObject("puntoRecojo").toString());
+                            recojo.setText(response.getString("puntoRecojo"));
                             EditText destino = findViewById(R.id.editTextPuntoDeDestino);
-                            destino.setText(response.getJSONObject("puntoDestino").toString());
+                            destino.setText(response.getString("puntoDestino"));
                             EditText detalle = findViewById(R.id.editTextDetalle);
-                            detalle.setText(response.getJSONObject("detalle").toString());
+                            detalle.setText(response.getString("detalle"));
 
                         } catch (JSONException e) {
                             Log.i("======>", e.getMessage());
