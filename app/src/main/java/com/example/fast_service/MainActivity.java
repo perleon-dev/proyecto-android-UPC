@@ -2,14 +2,14 @@ package com.example.fast_service;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.Menu;
+import android.view.MenuItem;
 
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
+import androidx.annotation.NonNull;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -60,29 +60,39 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.action_estado_pedido:
+                Intent myintent = new Intent(MainActivity.this, VisualizarEstadoPedidoActivity.class);
+                startActivity(myintent);
+                return false;
+            case R.id.action_registro_usuario:
+                Intent myintent1 = new Intent(MainActivity.this, RegistroUsuario.class);
+                startActivity(myintent1);
+                return false;
+            case R.id.action_visualizar_atenciones:
+                Intent myintent2 = new Intent(MainActivity.this, VisualizarAtencionesActivity.class);
+                startActivity(myintent2);
+                return false;
+            case R.id.action_visualizar_pedido:
+                Intent myintent3 = new Intent(MainActivity.this, VisualizarPedidoActivity.class);
+                startActivity(myintent3);
+                return false;
+            case R.id.nav_home:
+                Intent myintent4 = new Intent(MainActivity.this, ConsumptionHistoryActivity.class);
+                startActivity(myintent4);
+                return false;
+
+
+
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+    @Override
     public boolean onSupportNavigateUp() {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
-    }
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle item selection
-        switch (item.getItemId()) {
-            case R.id.nav_home:
-                Log.i("====>","Click en nav_home!!");
-                Intent intent = new Intent(this, ConsumptionHistoryActivity.class);
-                startActivity(intent);
-                return true;
-            case R.id.nav_gallery:
-                Log.i("====>","Click en nav_gallery!!");
-                return true;
-            case R.id.nav_slideshow:
-                Log.i("====>","Click en nav_slideshow!!");
-                return true;
-            default:
-                Log.i("====>","ninguno : " + item.getItemId());
-                return super.onOptionsItemSelected(item);
-        }
     }
 }
