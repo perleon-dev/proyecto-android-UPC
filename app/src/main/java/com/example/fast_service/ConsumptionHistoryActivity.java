@@ -2,6 +2,7 @@ package com.example.fast_service;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -56,4 +57,10 @@ public class ConsumptionHistoryActivity extends AppCompatActivity {
                 Log.i("======>", error.toString()); } } );
         RequestQueue requestQueue= Volley.newRequestQueue(this); requestQueue.add(stringRequest);
     }
+
+
+    public void retroceder(View v) {
+        startActivity(new Intent(this, MainActivity.class));
+    }
+
 }
