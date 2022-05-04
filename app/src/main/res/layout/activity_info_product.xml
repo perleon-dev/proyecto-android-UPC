@@ -190,44 +190,5 @@
         app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toStartOf="parent" />
 
-<<<<<<< HEAD
-=======
-    <TextView
-        android:id="@+id/txtEstadoProducto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="37dp"
-        android:layout_marginTop="39dp"
-        android:text="0001"
-        app:layout_constraintStart_toEndOf="@+id/textView11"
-        app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
-    <RadioGroup
-        android:layout_width="260dp"
-        android:layout_height="132dp"
-        tools:layout_editor_absoluteX="47dp"
-        tools:layout_editor_absoluteY="508dp" >
-
-        <RadioButton
-            android:id="@+id/radioButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="En Alamacen"
-            android:textSize="17sp" />
-
-        <RadioButton
-            android:id="@+id/radioButton2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="En Camino"
-            android:textSize="17sp" />
-
-        <RadioButton
-            android:id="@+id/radioButton3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Listo para la entrega"
-            android:textSize="17sp" />
-    </RadioGroup>
->>>>>>> 024616d89666e1b0936ed59e149629fc1f2c44f8
 </androidx.constraintlayout.widget.ConstraintLayout>
