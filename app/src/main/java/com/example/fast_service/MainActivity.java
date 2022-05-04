@@ -82,8 +82,14 @@ public class MainActivity extends AppCompatActivity {
                 Intent myintent4 = new Intent(MainActivity.this, ConsumptionHistoryActivity.class);
                 startActivity(myintent4);
                 return false;
-
-
+            case R.id.info_productos:
+                Intent myintent5 = new Intent(MainActivity.this, InfoProductActivity.class);
+                startActivity(myintent5);
+                return false;
+            case R.id.escoger_producto:
+                Intent myintent6 = new Intent(MainActivity.this, RegisterProductActivity.class);
+                startActivity(myintent6);
+                return false;
 
             default:
                 return super.onOptionsItemSelected(item);

@@ -21,10 +21,17 @@
         android:id="@+id/action_visualizar_pedido"
         android:orderInCategory="400"
         android:title="menu vipedido"/>
+
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/info_productos"
         android:orderInCategory="100"
-        android:title="@string/action_settings"
+        android:title="Informacion Producto"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/escoger_producto"
+        android:orderInCategory="100"
+        android:title="Escoger Producto"
         app:showAsAction="never" />
 
 </menu>

@@ -31,7 +31,7 @@ public class ConsumptionHistoryActivity extends AppCompatActivity {
         setContentView(R.layout.activity_consumption_history);
 
         cargarProductos();
-    }
+}
 
     public void cargarProductos(){
         String criterio = "1";
@@ -48,7 +48,7 @@ public class ConsumptionHistoryActivity extends AppCompatActivity {
                     ListView lstProductos = findViewById(R.id.lista);
                     ArrayAdapter<String> adaptador = new ArrayAdapter<>( ConsumptionHistoryActivity.this, android.R.layout.simple_list_item_1, items);
 
-        lstProductos.setAdapter(adaptador);
+                    lstProductos.setAdapter(adaptador);
                 }
                 catch (JSONException e) {
                     Log.i("======>", e.getMessage());
