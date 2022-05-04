@@ -63,6 +63,13 @@ public class LoginActivity extends AppCompatActivity {
                     Log.i("======>", "bien");
                     Log.i("======>", response.toString());
                     Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                    try{
+                        int idusuario = response.getInt("id_usuario");
+                        intent.putExtra("id_usuario", idusuario);
+                    }
+                     catch (JSONException e) {
+                        Log.i("Parametros ======>", e.getMessage());
+                    }
                     startActivity(intent);
                 }
                 else{
