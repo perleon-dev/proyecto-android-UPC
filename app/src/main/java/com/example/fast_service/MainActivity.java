@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMainBinding binding;
-
+    private int id_usuario;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,6 +50,12 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            id_usuario = extras.getInt("id_usuario");
+            //The key argument here must match that used in the other activity
+        }
     }
 
     @Override
@@ -64,6 +70,7 @@ public class MainActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.action_estado_pedido:
                 Intent myintent = new Intent(MainActivity.this, VisualizarEstadoPedidoActivity.class);
+                myintent.putExtra("id_usuario",id_usuario);
                 startActivity(myintent);
                 return false;
             case R.id.action_registro_usuario:
@@ -72,10 +79,14 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             case R.id.action_visualizar_atenciones:
                 Intent myintent2 = new Intent(MainActivity.this, VisualizarAtencionesActivity.class);
+                myintent2.putExtra("id_usuario",id_usuario);
+
                 startActivity(myintent2);
+
                 return false;
             case R.id.action_visualizar_pedido:
                 Intent myintent3 = new Intent(MainActivity.this, VisualizarPedidoActivity.class);
+                myintent3.putExtra("id_usuario",id_usuario);
                 startActivity(myintent3);
                 return false;
             case R.id.nav_home:

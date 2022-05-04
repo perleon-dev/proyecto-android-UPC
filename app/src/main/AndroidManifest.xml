@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Fast_Service"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".CancelarSolicitud"
+            android:exported="false" />
+        <activity
             android:name=".RegistroUsuario"
             android:exported="false" />
         <activity

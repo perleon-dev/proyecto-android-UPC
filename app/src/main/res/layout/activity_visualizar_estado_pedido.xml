@@ -7,6 +7,17 @@
     tools:context=".VisualizarEstadoPedidoActivity">
 
     <TextView
+        android:id="@+id/txtEstadoProducto2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Estado del envío del producto: "
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
         android:id="@+id/textView11"
         android:layout_width="322dp"
         android:layout_height="58dp"
@@ -18,128 +29,118 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/txtEstadoProducto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="28dp"
-        android:text="Ve el estado de tu pedido"
+        android:layout_marginTop="12dp"
+        android:text="producto"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+        app:layout_constraintTop_toBottomOf="@+id/txtEstadoProducto2" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/imgPedidoListo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="4dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/imgEnCamino"
         app:srcCompat="@drawable/morado" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/imgPedidoEntregado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="4dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/imgPedidoListo"
         app:srcCompat="@drawable/gris" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/imgEnCamino"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imgEnAlmacen"
         app:srcCompat="@drawable/verde" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName9"
+        android:id="@+id/txtPedidoEntregado"
         android:layout_width="307dp"
         android:layout_height="46dp"
         android:layout_marginTop="12dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Entregado"
+        android:text="Pedido entregado"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.512"
-        app:layout_constraintStart_toEndOf="@+id/imageView4"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName10" />
+        app:layout_constraintStart_toEndOf="@+id/imgPedidoListo"
+        app:layout_constraintTop_toBottomOf="@+id/txtPedidoListo" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName10"
+        android:id="@+id/txtPedidoListo"
         android:layout_width="307dp"
         android:layout_height="46dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="16dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Retornando entrega"
+        android:text="Pedido listo para la entrega"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.052"
-        app:layout_constraintStart_toEndOf="@+id/imageView5"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName7" />
+        app:layout_constraintStart_toEndOf="@+id/imgPedidoEntregado"
+        app:layout_constraintTop_toBottomOf="@+id/txtEnCamino" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/txtEnAlmacen"
         android:layout_width="310dp"
         android:layout_height="42dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="68dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="En camino"
+        android:text="En Almacen"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.117"
-        app:layout_constraintStart_toEndOf="@+id/imageView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toEndOf="@+id/imgEnAlmacen"
+        app:layout_constraintTop_toBottomOf="@+id/txtEstadoProducto" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName7"
+        android:id="@+id/txtEnCamino"
         android:layout_width="306dp"
         android:layout_height="44dp"
         android:layout_marginTop="16dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Iniciando Entrega"
+        android:text="En Camino"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView3"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        app:layout_constraintStart_toEndOf="@+id/imgEnCamino"
+        app:layout_constraintTop_toBottomOf="@+id/txtEnAlmacen" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imgEnAlmacen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="68dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/txtEstadoProducto"
         app:srcCompat="@drawable/naranja" />
-
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:text="La entrega de su pedido se encuentra en:"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
+        android:onClick="retroceder"
         android:text="Regresar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName10"
+        app:layout_constraintTop_toBottomOf="@+id/txtPedidoListo"
         app:layout_constraintVertical_bias="0.497" />
 </androidx.constraintlayout.widget.ConstraintLayout>
