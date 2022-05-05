@@ -8,19 +8,19 @@
     <item
         android:id="@+id/action_registro_usuario"
         android:orderInCategory="100"
-        android:title="menu regusuario"/>
+        android:title="Registar Usuario"/>
     <item
         android:id="@+id/action_visualizar_atenciones"
         android:orderInCategory="200"
-        android:title="menu viatenciones"/>
+        android:title="Vizualizar Atenciones"/>
     <item
         android:id="@+id/action_estado_pedido"
         android:orderInCategory="300"
-        android:title="menu viEstadoPedido"/>
+        android:title="Vizualizar Estado de Pedido"/>
     <item
         android:id="@+id/action_visualizar_pedido"
         android:orderInCategory="400"
-        android:title="menu vipedido"/>
+        android:title="Visualizar Pedido"/>
 
     <item
         android:id="@+id/info_productos"
