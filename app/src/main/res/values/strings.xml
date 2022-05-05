@@ -17,4 +17,7 @@
         <item>Atención del mes</item>
 
     </string-array>
+
+    <string name="action_ver_sucursales">Ver Sucursales</string>
+    <string name="action_ver_camara">Usar Cámara</string>
 </resources>

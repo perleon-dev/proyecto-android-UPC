@@ -101,6 +101,12 @@ public class MainActivity extends AppCompatActivity {
                 Intent myintent6 = new Intent(MainActivity.this, RegisterProductActivity.class);
                 startActivity(myintent6);
                 return false;
+            case R.id.action_ver_sucursales:
+                getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment_content_main, new SucursalesFragment()).addToBackStack(null).commit();
+                return false;
+            case R.id.action_ver_camara:
+                getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment_content_main, new CamaraFragment()).addToBackStack(null).commit();
+                return false;
 
             default:
                 return super.onOptionsItemSelected(item);

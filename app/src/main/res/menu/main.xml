@@ -34,4 +34,15 @@
         android:title="Escoger Producto"
         app:showAsAction="never" />
 
+    <item
+        android:id="@+id/action_ver_sucursales"
+        android:orderInCategory="100"
+        android:title="@string/action_ver_sucursales"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_ver_camara"
+        android:orderInCategory="100"
+        android:title="@string/action_ver_camara"
+        app:showAsAction="never" />
+
 </menu>
